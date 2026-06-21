@@ -1,4 +1,8 @@
-name: Android Build
+git add gradlew
+git add gradlew.bat
+git add gradle/
+git commit -m "Add Gradle wrapper"
+git push origin mainname: Android Build
 
 on:
   push:
@@ -29,8 +33,3 @@ jobs:
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
-git add gradlew
-git add gradlew.bat
-git add gradle/
-git commit -m "Add Gradle wrapper"
-git push origin main
